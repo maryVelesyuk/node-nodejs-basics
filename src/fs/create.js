@@ -7,7 +7,7 @@ const create = async () => {
     }
   });
   appendFile("src/fs/files/fresh.txt", "I am fresh and young", function (err) {
-    if (err) throw err;
+    if (err) throw new Error("FS operation failed");
   });
 };
 
